@@ -1,0 +1,143 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container px-5">
+    <img
+      class="logo"
+      src="assets/images/mwcd.jfif"
+      width="100"
+      height="60"
+    />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+      
+        
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']" title="About us">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/ngo']" title="Non-Governmental Organizations">NGO's</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/trainings']" title="Trainings">Trainings</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/faq']" title="Frequently Asked Questions">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contactus']" title="Contact Us">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/user']" title="Update user">Account</a>
+    </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="masthead text-white">
+<div class="masthead-content">
+
+
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-10">
+        <div class="col-lg-11 col-xl-9">
+          <div class="card">
+          <div class="row">
+            <div class="col-sm-6">
+              <h5 class="card-header text-center text-white bg-success">
+                Payment Gateway
+              </h5>
+              
+              <div >
+               
+                <div class="card-body">
+                  <!-- <h5 style="color: black;" class="card-title text-center">Payment Details</h5> -->
+         
+                  <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()"> 
+                  
+                     
+                    <div class="form-group">
+                      <label style="color: black;" for="coursename">Course Name</label>
+                      <input type="text" class="form-control" id="coursename"
+                      formControlName="coursename" disabled>                        
+                    </div>
+                    <div class="form-group">
+                      <label style="color: black;" for="amount">Amount</label>
+                      <input type="text" class="form-control" id="amount"
+                      formControlName="amount" disabled>                        
+                    </div>
+                    <div class="form-group">
+                      <label style="color: black;" for="duration">Duration</label>
+                      <input type="text" class="form-control" id="duration"
+                      formControlName="duration" disabled>                        
+                    </div> 
+                     <div class="form-group">
+                      <label style="color: black;" for="paymentDate">Payment Date</label>
+                      <input type="date" class="form-control col-md-8" id="paymentDate"
+                      formControlName="presentDate" disabled>                        
+                    </div>
+                  
+          &nbsp;
+                    <div class="text-center">
+                      <button class="btn btn-success mr-1">Confirm Payment</button>
+                     
+                    </div>
+                  </form>
+              
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card-body">
+              <!-- <img src="assets/images/images28.png" style="height: 89%; width:88%"/> -->
+                <img  src="assets/images/MicrosoftTeams-image.png" style="height: 85%; width:85%; "/>
+              </div>
+                
+            </div>
+        
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="bg-circle-1 bg-circle"></div>
+<div class="bg-circle-2 bg-circle"></div>
+<div class="bg-circle-3 bg-circle"></div>
+<div class="bg-circle-4 bg-circle"></div>
+</header>
+
+
+<!-- Footer-->
+<footer
+id="sticky-footer"
+class="flex-shrink-0 py-4 bg-dark text-white-50"
+>
+<div class="container text-center">
+  <small> Ministry of Women and Child Development developed and maintained by &nbsp; &nbsp; &nbsp; &nbsp;Larsen & Toubro Infotech</small>
+</div>
+</footer>
+<!-- Bootstrap core JS-->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+<!-- Core theme JS-->
+<!-- </body>
+</body>
+</html> -->
+
+

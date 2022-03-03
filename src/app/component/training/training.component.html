@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+  </head>
+  <body>
+    <body id="page-top">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container px-5">
+          <img
+            class="logo"
+            src="assets/images/mwcd.jfif"
+            width="100"
+            height="60"
+          />&nbsp;&nbsp;
+          <h3 style="color: white">Women Empowerment</h3>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/about']" title="About us"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  [routerLink]="['/ngo']"
+                  title="Non-Governmental Organizations"
+                  >NGO's</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  [routerLink]="['/trainings']"
+                  title="Trainings"
+                  >Trainings</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  [routerLink]="['/faq']"
+                  title="Frequently Asked Questions"
+                  >FAQ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  [routerLink]="['/contactus']"
+                  title="Contact Us"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/user']" title="Update user"
+                  >Account</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header-->
+      <header class="masthead text-center text-white">
+        <div class="masthead-content">
+
+
+          <!--main content-->
+          <div class="p-3" id="background">
+            <h2 class="h2-responsive text-center p-3">Training Details</h2>
+
+
+            <!--card1-->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="h3-responsive text-center p-2" style="color: black">
+                  Special Women-Centric Projects
+                </h3>
+              </div>
+              <div class="card-body">
+                <div class="column">
+                  <div class="card">
+                    <div class="row">
+                      <img
+                        style="width: 100%"
+                        src="assets/images/Women-Skill-India-schemes.jpeg"
+                      />
+                    </div>
+                    <!--course id - 10011 : Special Women-Centric Projects-->
+                    <button class="btn btn-success" (click)="assignCourse1()">
+                      ENROLL IN TRAINING</button
+                    >&nbsp; &nbsp;
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="course-details">
+                      <h4 class="h4-responsive text-center p-2">
+                        Course Details
+                      </h4>
+                      <div class="content">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <th>About the course:</th>
+                              <td>
+                                NSDC, through its training partners such as Mann
+                                Deshi Foundation, Shri Mahila Sewa Sahkari Bank
+                                Limited and Sri Sarada Math RasikBhita are
+                                working exclusively on skill development of
+                                women, especially in rural areas. The training
+                                constitutes imparting digital, accounting and
+                                entrepreneurial skills so as to facilitate the
+                                possibility of setting up their own business.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Objective:</th>
+                              <td>
+                                Encouraging young women to take informed career
+                                decisions. Initiate mobile training centers and
+                                digital learning centers for access to quality
+                                training leading to skill development.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Fee:</th>
+                              <td>1200 /-</td>
+                            </tr>
+                            <tr>
+                              <th>Duration:</th>
+                              <td>60 days</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+
+            <!--card 2-->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="h3-responsive text-center p-2" style="color: black">
+                  Fashion Designing
+                </h3>
+              </div>
+              <div class="card-body">
+                <div class="column">
+                  <div class="card">
+                    <div class="row">
+                      <img
+                        style="width: 100%; height: 200%"
+                        src="assets/images/training6.jfif"
+                      />
+                    </div>
+                    <!--course id - 10016 : Fashion Designing-->
+                    <button class="btn btn-success" (click)="assignCourse2()">
+                      ENROLL IN TRAINING</button
+                    >&nbsp; &nbsp;
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="course-details">
+                      <h4 class="h4-responsive text-center p-2">
+                        Course Details
+                      </h4>
+                      <div class="content">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <th>About the course:</th>
+                              <td>
+                                NSDC, through this initiative is
+                                working exclusively on skill development of
+                                women who want to become a successful Professional Fashion Designer.
+                                The training constitutes understanding fashion cycles,
+                                ,equipments,materials,design work and fashion drawing to facilitate the
+                                possibility of setting up their own business.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Objective:</th>
+                              <td>
+                                Providing an oppurtunity to aspiring women and young girls 
+                                who are interested in fasion , an induction into exciting 
+                                world of fashion .to take career in 
+                                decisions.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Fee:</th>
+                              <td>1700 /-</td>
+                            </tr>
+                            <tr>
+                              <th>Duration:</th>
+                              <td>90 days</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+
+            <!--card 3-->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="h3-responsive text-center p-2" style="color: black">
+                  Food Processing
+                </h3>
+              </div>
+              <div class="card-body">
+                <div class="column">
+                  <div class="card">
+                    <div class="row">
+                      <img
+                        style="width: 100%; height: 180%"
+                        src="assets/images/training5.jfif"
+                      />
+                    </div>
+                    <!--course id - 10017 : Food Processing-->
+                    <button class="btn btn-success" (click)="assignCourse3()">
+                      ENROLL IN TRAINING</button
+                    >&nbsp; &nbsp;
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="course-details">
+                      <h4 class="h4-responsive text-center p-2">
+                        Course Details
+                      </h4>
+                      <div class="content">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <th>About the course:</th>
+                              <td>
+                                NSDC, through this training is  
+                                offering viable options in food processing sector for women entrepreneurs, 
+                                which could also be tapped by rural women.
+                                Participants get acquainted with a wide range of food processing methods
+                                for fruit beverages, jam, jelly, fancy cakes and cookies, 
+                                value addition of traditional millets 
+                                and rice and techniques for fermented food products.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Objective:</th>
+                              <td>
+                                Encouraging women to take informed career
+                                decisions. Providing them oppurunity to generate employment through small scale
+                                food processing hub , create self help groups and sustain their life. 
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Fee:</th>
+                              <td>1000 /-</td>
+                            </tr>
+                            <tr>
+                              <th>Duration:</th>
+                              <td>45 days</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+
+
+
+
+          
+            <!----NGO-2:ngo id:1003-->
+            <!--course id - 10012 :Entrepreneurial Initiatives-->
+
+            <!-- <div class="card">
+              <div class="card-header">
+                <h3 class="h3-responsive text-center p-2" style="color: black">
+                  Entrepreneurial Initiatives
+                </h3>
+              </div>
+              <div class="card-body">
+                <div class="column">
+                  <div class="card">
+                    <div class="row">
+                      <img
+                        style="width: 100%; height: 200%"
+                        src="assets/images/women17.jpeg"
+                      />
+                    </div>
+                    <button class="btn btn-success" (click)="assignCourse4()">
+                      ENROLL IN TRAINING</button
+                    >&nbsp; &nbsp;
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="course-details">
+                      <h4 class="h4-responsive text-center p-2">
+                        Course Details
+                      </h4>
+                      <div class="content">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <th>About the course:</th>
+                              <td>
+                                MSDE is committed to facilitate growth of women
+                                entrepreneurs in the country. NIESBUD under the
+                                MSDE has designed Entrepreneurship Development
+                                Programs for the rural women with the objective
+                                to inculcate entrepreneurial values, attitude
+                                and motivation among the Rural women to take up
+                                challenges to set up an enterprise/Group
+                                Enterprises. The Livelihood Business Incubation
+                                (LB I) approach is also used to promote woman
+                                entrepreneurs by the Institute.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Objective:</th>
+                              <td>
+                                The main object of this program is to make women
+                                independent and confident both economically and
+                                socially through the training.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Fee:</th>
+                              <td>1200 /-</td>
+                            </tr>
+                            <tr>
+                              <th>Duration:</th>
+                              <td>60 days</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br /> -->
+
+             <!--course id - 10016 :Fashion Designing-->
+
+            <!-- <div class="card">
+              <div class="card-header">
+                <h3 class="h3-responsive text-center p-2" style="color: black">
+                  Tailoring
+                </h3>
+              </div>
+              <div class="card-body">
+                <div class="column">
+                  <div class="card">
+                    <div class="row">
+                      <img
+                        style="width: 100%; height: 200%"
+                        src="assets/images/tailoring.jpg"
+                      />
+                    </div>
+                    <button class="btn btn-success" (click)="assignCourse5()">
+                      ENROLL IN TRAINING</button
+                    >&nbsp; &nbsp;
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="course-details">
+                      <h4 class="h4-responsive text-center p-2">
+                        Course Details
+                      </h4>
+                      <div class="content">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <th>About the course:</th>
+                              <td>
+                                The trainees will be selected from the poor and
+                                destitute women of the society belonging low
+                                income group preferably below 40 years of age
+                                having primary knowledge of reading and writing.
+                                The trainees will get the stipend of Rs. 200/-
+                                per month. The duration of training is for one
+                                year. maximum number of trainees in each center
+                                is 50.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Objective:</th>
+                              <td>
+                                The main object of the scheme is to rehabilitate
+                                the poor and destitute girls and women of the
+                                society both economically and socially through
+                                the training in cutting and tailoring and
+                                knitting.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Fee:</th>
+                              <td>1700 /-</td>
+                            </tr>
+                            <tr>
+                              <th>Duration:</th>
+                              <td>90 days</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br /> -->
+
+            <!----NGO-3:ngo id:1004-->
+             <!--course id - 10013 :Tailoring-->
+
+            <!-- <div class="card">
+              <div class="card-header">
+                <h3 class="h3-responsive text-center p-2" style="color: black">
+                  Stitching
+                </h3>
+              </div>
+              <div class="card-body">
+                <div class="column">
+                  <div class="card">
+                    <div class="row">
+                      <img
+                        style="width: 100%; height: 200%"
+                        src="assets/images/stitching.jpg"
+                      />
+                    </div>
+                    <button class="btn btn-success" (click)="assignCourse6()">
+                      ENROLL IN TRAINING</button
+                    >&nbsp; &nbsp;
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="course-details">
+                      <h4 class="h4-responsive text-center p-2">
+                        Course Details
+                      </h4>
+                      <div class="content">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <th>About the course:</th>
+                              <td>
+                                The beauty and expertise that Indians show in
+                                stitching and tailoring is admired by
+                                individuals across the globe. Specifically in
+                                India, there is a great diversity in the kinds
+                                of clothes people wear- each style is unique in
+                                its own way. Comprehending all these various
+                                styles is a challenge; with the challenge comes
+                                a great opportunity.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Objective:</th>
+                              <td>
+                                To teach the trainees on how to perform
+                                stitiching from basic and with time how can it
+                                be improved for the betterment and develop as a
+                                skill for earning.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Fee:</th>
+                              <td>900 /-</td>
+                            </tr>
+                            <tr>
+                              <th>Duration:</th>
+                              <td>60 days</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br /> -->
+
+             <!--course id - 10015 :Agriculture-->
+
+            <!-- <div class="card">
+              <div class="card-header">
+                <h3 class="h3-responsive text-center p-2" style="color: black">
+                  Agriculture
+                </h3>
+              </div>
+              <div class="card-body">
+                <div class="column">
+                  <div class="card">
+                    <div class="row">
+                      <img
+                        style="width: 100%; height: 200%"
+                        src="assets/images/agri3.jpg"
+                      />
+                    </div>
+                    <button class="btn btn-success" (click)="assignCourse7()">
+                      ENROLL IN TRAINING
+                    </button>
+                    &nbsp; &nbsp;
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="course-details">
+                      <h4 class="h4-responsive text-center p-2">
+                        Course Details
+                      </h4>
+                      <div class="content">
+                        <table class="table table-striped">
+                          <tbody>
+                            <tr>
+                              <th>About the course:</th>
+                              <td>
+                                Kisan Mitras would be trained resource persons
+                                who work with farmers to help them shift towards
+                                agro-ecological approaches to sustain their
+                                farming, organise themselves into producer
+                                cooperatives, understand the issues in public
+                                policy and improve the support systems. They
+                                will undergo a foundation course and can
+                                specialise in any of the areas of ecological
+                                farming, farmers’ institutions and marketing or
+                                public policy support.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Objective:</th>
+                              <td>
+                                Minimal literacy to read and write and
+                                communicate in Hindi/English and experience in
+                                working farmers is essential.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th>Fee:</th>
+                              <td>800 /-</td>
+                            </tr>
+                            <tr>
+                              <th>Duration:</th>
+                              <td>50 days</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+          
+          </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+      </header>
+
+      <footer
+        id="sticky-footer"
+        class="flex-shrink-0 py-4 bg-dark text-white-50"
+      >
+        <div class="container text-center">
+          <small>
+            Ministry of Women and Child Development developed and maintained by
+            &nbsp; &nbsp; &nbsp; &nbsp;Larsen & Toubro Infotech</small
+          >
+        </div>
+      </footer>
+    </body>
+  </body>
+</html>
