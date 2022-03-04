@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { LoginService } from 'src/app/Services/login.service';
-
-
+import { LoginService } from '../Services/login.service';
+import { User } from '../User';
 
 @Component({
   selector: 'app-user-signup',
@@ -13,7 +12,7 @@ import { LoginService } from 'src/app/Services/login.service';
 export class UserSignupComponent implements OnInit {
   addForm: any;
   user: any;
-  size: number | undefined; //modified to fix error, to check???
+  //checkRegister: boolean;
   submitted: boolean = false;
   invalidRegisteration: boolean = false;
   constructor(
@@ -24,27 +23,34 @@ export class UserSignupComponent implements OnInit {
 
   ngOnInit() {
     this.addForm = this.formBuilder.group({
-      id: [],
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
+      fullName: ['', Validators.required],
+      phoneNo: ['', Validators.required],
+      aadharNo: ['', Validators.required],
       email: ['', Validators.required],
+      address: ['', Validators.required],
       password: ['', Validators.required],
-      password2: ['', Validators.required],
     });
   }
 
   onSubmit() {
     this.submitted = true;
     this.loginService
-      .getPassword(this.addForm.controls.email.value)
+      .getRegister(this.addForm.controls.email.value)
       .subscribe((data) => {
-        this.size = Object.keys(data).length;
-        console.log(this.size);
+        // this.checkRegister = data;
+        this.checkBoolean(data);
       });
+  }
+  checkBoolean(chkBoolean: boolean) {
     if (this.addForm.invalid) {
       return;
     }
-    if (this.size == 0) {
+    console.log(chkBoolean);
+    if (this.addForm.invalid) {
+      return;
+    }
+
+    if (chkBoolean == false) {
       this.loginService
         .registerUser(this.addForm.value)
         .subscribe((data) => {});
