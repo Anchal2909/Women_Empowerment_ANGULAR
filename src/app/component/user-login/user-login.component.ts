@@ -14,6 +14,7 @@ export class UserLoginComponent implements OnInit {
 
   submitted: boolean = false;
   invalidLogin: boolean = false;
+  //checkLogin: boolean = false;
 
   user: any;
   email: string = '';
@@ -26,33 +27,30 @@ export class UserLoginComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
+
     this.loginService
-      .getPassword(this.loginForm.controls.email.value)
+      .getPassword(
+        this.loginForm.controls.email.value,
+        this.loginForm.controls.password.value
+      )
       .subscribe((data) => {
-        this.user = data;
-
-        this.pswd = this.user[0].password;
-        this.email = this.user[0].email;
-        console.log(this.user[0].password);
-        console.log(this.user[0].email);
-
-        console.log(
-          'user entered email' + this.loginForm.controls.email.value.toString()
-        );
-        //console.log(this.user.email);
+        //this.checkLogin = data;
+        this.checkBoolean(data);
       });
+  }
 
+  checkBoolean(chkBoolean: boolean) {
     if (this.loginForm.invalid) {
       return;
     }
-    if (this.loginForm.controls.password.value.toString() == this.pswd) {
+    console.log(chkBoolean);
+    if (chkBoolean) {
       this.invalidLogin = false;
-      console.log(this.user[0].email);
-      console.log(this.user[0].password);
-      localStorage.setItem('username', this.loginForm.controls.email.value);
-      // localStorage.setItem('userId', JSON.stringify(this.empObj.empNo));
-      sessionStorage.setItem('userId',"13"); // try 
-      alert("Logged-in Successfully");
+
+      localStorage.setItem('verifiedLogin', 'true');
+       // localStorage.setItem('userId', JSON.stringify(this.empObj.empNo));
+       sessionStorage.setItem('userId',"13"); // try - need to set userid here from getService ***
+       alert("Logged-in Successfully");
       this.router.navigateByUrl('/home');
       console.log('logged in');
     } else {
