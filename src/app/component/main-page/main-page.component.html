@@ -1,14 +1,8 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Women Empowerment</title>
-        
-    </head> 
-    <body id="page-top">-->
+<!-- Load font awesome icons -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
   <div class="container px-5">
@@ -33,8 +27,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto">
-        <!-- <li class="nav-item"><a class="nav-link" href="Register.html">Sign Up</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li> -->
         <li class="nav-item">
           <a class="nav-link" routerLink="/signup">Sign Up</a>
         </li>
@@ -45,78 +37,406 @@
     </div>
   </div>
 </nav>
-<!-- Header-->
-<header class="masthead text-center text-white">
+
+<header class="masthead text-white">
   <div class="masthead-content">
-    <div class="container px-5">
-      <h1 class="masthead-heading mb-0">Women Empowerment</h1>
-      &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<br />
-      <h4 style="color: whitesmoke">Explore..Encourage..Empower..</h4>
-      <a class="btn btn-primary btn-xl rounded-pill mt-5" routerLink="/home"
-      (click)="getStarted()">Get Started</a
+    <!--carousel-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <!--http://www.w3.org/2000/svg-->
+        <div class="carousel-item active">
+          <!-- <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#000"/>
+          </svg> -->
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>
+                EMPOWERED WOMEN AND GIRLS CAN LIFT THEIR ENTIRE FAMILIES AND
+                COMMUNITIES OUT OF POVERTY
+              </h1>
+              <p>
+                WE's in collaboration with global NGOs provide training &
+                courses to women to empower them and assist their families to
+                live a better life.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">JOIN THE MOVEMENT</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#000" />
+          </svg> -->
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>
+                PROVIDING MARGINALISED GROUPS AND COMMUNITIES A LIFE OF DIGNITY
+              </h1>
+              <p>
+                We are a not-for-profit organisation that builds capacity of
+                communities to ensure empowerment for marginalised women and
+                girls.
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="#">KNOW MORE</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#000" />
+          </svg> -->
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>
+                WOMEN ARE THE REAL ARCHITECTS OF SOCIETY <br />
+                HELP WOMEN REALISE THIER SUCCESS DREAMS
+              </h1>
+              <p>
+                Promoting women’s sense of self-worth, their ability to
+                determine their own choices, and their right to influence social
+                change for themselves and others.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">SUCCESS STORIES</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <svg
+            class="bd-placeholder-img"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#000" />
+          </svg> -->
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>
+                SUPPORT IN OUR MISSION OF EMPOWERING THE WOMEN , DONATE TO
+                SUPPORT OUR MOVEMENT
+              </h1>
+              <p>Your small contribution can make a huge impact .</p>
+              <p><a class="btn btn-lg btn-primary" href="#">DONATE</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
       >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
-  <div class="bg-circle-1 bg-circle"></div>
-  <div class="bg-circle-2 bg-circle"></div>
-  <div class="bg-circle-3 bg-circle"></div>
-  <div class="bg-circle-4 bg-circle"></div>
 </header>
-<!-- Content section 1-->
-<section id="scroll">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/images/image6.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 class="display-4">Stand up for yourself</h2>
-                            <p>I never dream for success i worked for it</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- Content section 2-->
-<section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/images/image5.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="p-5">
-                            <h2 class="display-4">We salute you!</h2>
-                            <p>Iam not what happened to me,Iam what I choose to become</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- Content section 3-->
-<section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/images/image5.jpg" alt="..." /></div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="p-5">
-                            <h2 class="display-4">Strong Women</h2>
-                            <p>She Overcome everything that was meant to destroy her</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- Footer-->
-<!-- Footer-->
-<footer
-id="sticky-footer"
-class="flex-shrink-0 py-4 bg-dark text-white-50"
->
-<div class="container text-center">
-  <small> Ministry of Women and Child Development developed and maintained by &nbsp; &nbsp; &nbsp; &nbsp;Larsen & Toubro Infotech</small>
-</div>
+
+<section class="team-section text-center" style="color: black">
+  <h2 class="h1-responsive font-weight-bold my-5">MISSION AND VISION</h2>
+
+  <h6>
+    Our Mission is to empower women with tools to work their way out of poverty,
+    care for their families, and strengthen their communities. A world where
+    every woman is able to use her voice, make her own decisions, and engage in
+    economic opportunities.
+  </h6>
+
+  We envision a world without poverty in which women are empowered, uplifted and
+  equal partners in society.they possess the tools to provide a better life for
+  themselves and their families and they have the hope, opportunity and ability
+  to control their lives and futures. We believe all women deserve the
+  opportunity to live free from poverty and being self-independent. We partner
+  with high-impact grassroots ngos and organizations. together, we provide
+  different trainings and courses that enable hard-working women to create
+  sustainable livelihoods, start their own small scale businesses, support their
+  families and strengthen their communities, improve their lives and change our
+  world.<br />
+  We’re funded 100% by your charitable donations.
+</section>
+<br />
+<hr />
+
+<!--Our Team -section-->
+<section class="team-section text-center">
+  <h2 class="h1-responsive font-weight-bold my-5">OUR AMAZING TEAM</h2>
+
+  <div class="card-group">
+    <div class="card">
+      <div class="avatar mx-auto">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).webp"
+          class="rounded-circle z-depth-1"
+          alt="Sample avatar"
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="font-weight-bold mt-4 mb-3">Anchal Singh</h5>
+        <p class="text-uppercase blue-text">
+          <strong>Executive Director</strong>
+        </p>
+        <ul class="list-unstyled mb-0">
+          <a class="p-2 fa-lg fb-ic">
+            <a href="#" class="fa fa-facebook"></a>
+          </a>
+          <a class="p-2 fa-lg tw-ic">
+            <a href="#" class="fa fa-twitter"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-instagram"></a>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="avatar mx-auto">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).webp"
+          class="rounded-circle z-depth-1"
+          alt="Sample avatar"
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="font-weight-bold mt-4 mb-3">Shrawani</h5>
+        <p class="text-uppercase blue-text">
+          <strong>Assistant Director</strong>
+        </p>
+        <ul class="list-unstyled mb-0">
+          <a class="p-2 fa-lg fb-ic">
+            <a href="#" class="fa fa-facebook"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-instagram"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-linkedin"></a>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="avatar mx-auto">
+        <img
+          src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).webp"
+          class="rounded-circle z-depth-1"
+          alt="Sample avatar"
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="font-weight-bold mt-4 mb-3">SaiHoshini Tunmala</h5>
+        <p class="text-uppercase blue-text">
+          <strong>Head of Marketing</strong>
+        </p>
+        <ul class="list-unstyled mb-0">
+          <a class="p-2 fa-lg fb-ic">
+            <a href="#" class="fa fa-facebook"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-twitter"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-linkedin"></a>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Suceess stories -section-->
+<section class="team-section text-center my-5">
+  <h2 class="h1-responsive font-weight-bold my-5">SUCCESS STORIES</h2>
+  <div class="card-group">
+    <div class="card">
+      <img src="assets/images/story1.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Inspiring community with leadership</h5>
+        <p class="card-text">
+          Former teacher, Sudha Manirathanam chose to leave her plush job to
+          make a difference in her Nattarmangalam panchayat in Kattumanarkoil
+          block. She has worked for her village as a ‘model panchayat’ when it
+          comes to women’s rights and the survival of daughters. Under her
+          guidance, her village won many awards.
+        </p>
+      </div>
+      <div class="card-footer" style="background-color: orangered">
+        <a><b>READ MORE</b></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/story2.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Meet artisan Preeti: an empowered role model</h5>
+        <p class="card-text">
+          Preeti Dipak Jirage has eyes that spark happiness, pride and strength.
+          During a conversation with a Women on Wings team, she proofs that
+          spark. Preeti is part of a cluster that produces Kolhapuri jewelry for
+          Women on Wings’ business partner Kalapuri, and she turns out to be the
+          spokesperson of that cluster, eager to share her own story and
+          inviting the other women to join in the conversations.
+        </p>
+      </div>
+      <div class="card-footer" style="background-color: orangered">
+        <a><b>READ MORE</b></a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/images/story1.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Encouraging women to dream big</h5>
+        <p class="card-text">
+          SARI LATHA is a homemaker but her dream to earn money and give some
+          financial support to her husband but she is not well Educated. Then
+          she joins ShineNGO and started learning beautician course for free and
+          now she is working as a Beautician at Olena beauty parlor and her
+          income in more than 6000/-
+        </p>
+      </div>
+      <div class="card-footer" style="background-color: orangered">
+        <a><b>READ MORE</b></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--contact section-->
+<section class="team-section text-center bg-dark text-white">
+  <div class="container text-white-50">
+    <footer class="row row-cols-5 py-5 my-5 border-top">
+      <div class="col">
+        <h5>CONTACT US</h5>
+        <p class="text-muted">
+          &copy; Module No. 411, 4th Floor, NSIC-MDBP Building Okhla Industrial
+          Estate, New Delhi – 110020 (INDIA)<br />
+          M - +919897546378
+        </p>
+      </div>
+
+      <div class="col"></div>
+
+      <div class="col">
+        <h5>Quick Links</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Donate</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Conatact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Resources</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Impact Report</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Media</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Gallery</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Events</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</section>
+
+<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+  <div class="container text-center">
+    <small>
+      Ministry of Women and Child Development developed and maintained by &nbsp;
+      &nbsp; &nbsp; &nbsp;Larsen & Toubro Infotech</small
+    >
+  </div>
 </footer>
