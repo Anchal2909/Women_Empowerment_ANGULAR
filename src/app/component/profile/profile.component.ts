@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { LoginService } from '../Services/login.service';
-import { User } from '../User';
+import { User } from 'src/app/Model/User';
+import { LoginService } from 'src/app/Services/login.service';
 
 @Component({
   selector: 'app-profile',

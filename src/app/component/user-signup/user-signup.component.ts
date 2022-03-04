@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { LoginService } from '../Services/login.service';
-import { User } from '../User';
+import { LoginService } from 'src/app/Services/login.service';
+
 
 @Component({
   selector: 'app-user-signup',
