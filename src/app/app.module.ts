@@ -19,6 +19,7 @@ import { TrainingsRegisterComponent } from './component/trainings-register/train
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { PaymentComponent } from './component/payment/payment.component';   
+import { ProfileComponent } from './component/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { PaymentComponent } from './component/payment/payment.component';
     NgoComponent,
     NgoDetailsComponent,
     TrainingsRegisterComponent,
-    PaymentComponent
+    PaymentComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -51,8 +53,7 @@ import { PaymentComponent } from './component/payment/payment.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgSelectModule, //try
-    NgMultiSelectDropDownModule.forRoot() //try
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

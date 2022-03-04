@@ -47,10 +47,16 @@ export class UserLoginComponent implements OnInit {
     if (chkBoolean) {
       this.invalidLogin = false;
 
-      localStorage.setItem('verifiedLogin', 'true');
+      sessionStorage.setItem('verifiedLogin', 'true');
        // localStorage.setItem('userId', JSON.stringify(this.empObj.empNo));
        sessionStorage.setItem('userId',"13"); // try - need to set userid here from getService ***
        alert("Logged-in Successfully");
+      this.loginService
+        .getRegister(this.loginForm.controls.email.value)
+        .subscribe((data) => {
+          // this.checkRegister = data;
+          sessionStorage.setItem('userId', JSON.stringify(data));
+        });
       this.router.navigateByUrl('/home');
       console.log('logged in');
     } else {

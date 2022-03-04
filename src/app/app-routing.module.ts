@@ -13,6 +13,7 @@ import { UserSignupComponent } from './component/user-signup/user-signup.compone
 // import { UserSignupComponent } from './component/user-signup/user-signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PaymentComponent } from './component/payment/payment.component';
+import { ProfileComponent } from './component/profile/profile.component';
 
 const routes: Routes = [
   {path:'', component:MainPageComponent},
@@ -27,7 +28,7 @@ const routes: Routes = [
   // {path:'vList',component:NgoVolunteerListComponent},
   {path:'about',component:AboutComponent},
   {path:'faq',component:FaqComponent},
-
+  { path: 'profile', component: ProfileComponent },
   {path:'ngo', component:NgoComponent}, //nikhil
   //{path:'ngoList', component:NgoComponent},                     //try
   // {path:'ngoDetails/:ngoId', component:NgoDetailsComponent},    //try

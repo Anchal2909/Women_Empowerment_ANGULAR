@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private router: Router) {
+    if (
+      sessionStorage.getItem('verifiedLogin') == 'false' ||
+      sessionStorage.getItem('verifiedLogin') == null
+    ) {
+      this.router.navigateByUrl('/login');
+      console.log('value entered here');
+    }
   }
+
+  ngOnInit(): void {}
 
 }
