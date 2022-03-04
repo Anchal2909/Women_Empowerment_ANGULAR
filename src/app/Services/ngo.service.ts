@@ -10,13 +10,13 @@ export class NgoService {
   ngoList:ngo[]=[];
   ngoId:any;
   
-  baseUrl:string="http://localhost:3000/ngoList";
+  baseUrl:string="http://localhost:8080/womenEmp";
   constructor(private httpServ: HttpClient) { }
 
    //getVolunteersList
    public getNgoList()
    {
-     console.log("getNgoList() method : " +this.httpServ.get<ngo[]>(this.baseUrl));
-     return this.httpServ.get<ngo[]>(this.baseUrl);
+    console.log("get NgoList()"+this.httpServ.get<ngo[]>(this.baseUrl+'/listAllNgo'));
+    return this.httpServ.get<ngo[]>(this.baseUrl+'/listAllNgo');
    }
 }

@@ -28,7 +28,8 @@ const routes: Routes = [
   {path:'about',component:AboutComponent},
   {path:'faq',component:FaqComponent},
 
-  {path:'ngoList', component:NgoComponent},                     //try
+  {path:'ngo', component:NgoComponent}, //nikhil
+  //{path:'ngoList', component:NgoComponent},                     //try
   // {path:'ngoDetails/:ngoId', component:NgoDetailsComponent},    //try
   {path:'ngoDetails', component:NgoDetailsComponent},    //try
   // {path:'trainings/:ngoId',component:TrainingComponent},               //try
