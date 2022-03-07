@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
  
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgoService } from 'src/app/Services/ngo.service';
-import { ngo } from '../ngo/ngo';
 
 @Component({
   selector: 'app-ngo-details',
@@ -25,11 +24,15 @@ export class NgoDetailsComponent implements OnInit {
   //     console.log("Ngo id passed is :"+ data.get('ngoId'));
   //     this.ngoId = data.get('ngoId'); 
       
-   
+   this.getNgoDetails();
   // });
   }
-
+  public getNgoDetails(){
+    var ngoID=sessionStorage.getItem("assignedNgoId");
+    console.log("Ngo is is "+ngoID);
+  }
   viewCourses(): void {
+
     // sessionStorage.setItem('assignedNgoId', JSON.stringify(this.ngo.ngoId));
     // sessionStorage.setItem("assignedNgoId", ngo.ngoId.toString());
     // console.log("Ngo id passed from session storage is:"+ngo.ngoId);
