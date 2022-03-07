@@ -17,6 +17,7 @@ export class TrainingComponent implements OnInit {
   {
     regMstId:0, ngoId: 0, courseId: 0, userId:0
   };
+  ngoIdBySession:any;
   
   // constructor(
   //   private activatedroute: ActivatedRoute
@@ -33,9 +34,12 @@ export class TrainingComponent implements OnInit {
 
     this.userId = sessionStorage.getItem("userId");
     console.log("session userId :" + sessionStorage.getItem("userId"));
+
+    this.ngoIdBySession = sessionStorage.getItem("assignedNgoId");
+    console.log("session ngoIdBySession :" + sessionStorage.getItem("assignedNgoId"));
    }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
 
   // ngOnInit(): void {
