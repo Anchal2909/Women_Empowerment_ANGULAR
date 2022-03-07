@@ -11454,7 +11454,13 @@ header.masthead .bg-circle-4 {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 100%;
+  padding: 8px 15px;
+  /* background: #FFFFF3; */
+  border-radius: 1px;
 }
+
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
