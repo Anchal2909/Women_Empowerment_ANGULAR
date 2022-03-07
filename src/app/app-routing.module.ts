@@ -15,36 +15,37 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PaymentComponent } from './component/payment/payment.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { AdminLoginComponent } from './component/admin-login/admin-login.component';
 
 const routes: Routes = [
-  {path:'', component:MainPageComponent},
-  {path:'mainPage', component:MainPageComponent}, //try
-  {path:'home', component:HomeComponent},
+  { path: '', component: MainPageComponent },
+  { path: 'mainPage', component: MainPageComponent }, //try
+  { path: 'home', component: HomeComponent },
   // {path:'user',component:UpdateUserComponent},
-  {path:'login', component:UserLoginComponent},
-  {path:'signup', component:UserSignupComponent},
+  { path: 'login', component: UserLoginComponent },
+  { path: 'signup', component: UserSignupComponent },
   // {path:'ngo', component:NgoRegisterComponent},
   // {path :'ngologin', component: NgoLoginComponent},
   // {path:'ngoprograms', component:NgoVolunteerPgInfoComponent},
   // {path:'vList',component:NgoVolunteerListComponent},
-  {path:'about',component:AboutComponent},
-  {path:'faq',component:FaqComponent},
+  { path: 'about', component: AboutComponent },
+  { path: 'faq', component: FaqComponent },
   { path: 'profile', component: ProfileComponent },
-  {path:'ngo', component:NgoComponent}, //nikhil
+  { path: 'ngo', component: NgoComponent }, //nikhil
   //{path:'ngoList', component:NgoComponent},                     //try
   // {path:'ngoDetails/:ngoId', component:NgoDetailsComponent},    //try
-  {path:'ngoDetails', component:NgoDetailsComponent},    //try
+  { path: 'ngoDetails', component: NgoDetailsComponent }, //try
   // {path:'trainings/:ngoId',component:TrainingComponent},               //try
-  {path:'trainings',component:TrainingComponent},    
+  { path: 'trainings', component: TrainingComponent },
   // {path:'register/:ngoId',component:TrainingsRegisterComponent}        //try
-  {path:'register',component:TrainingsRegisterComponent},   
-  {path:'payment',component:PaymentComponent},
-  {path:'dashboard',component:DashboardComponent}   
-  
+  { path: 'register', component: TrainingsRegisterComponent },
+  { path: 'adminlogin', component: AdminLoginComponent },
+  { path: 'payment', component: PaymentComponent },
+  { path: 'dashboard', component: DashboardComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
