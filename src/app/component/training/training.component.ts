@@ -11,6 +11,7 @@ import { training } from './training';
 })
 export class TrainingComponent implements OnInit {
   ngoId:any;
+  ngoIdDetail:any;
   courseId: any;
   userId: any;
   trainingObj: training = 
@@ -34,14 +35,15 @@ export class TrainingComponent implements OnInit {
 
     this.userId = sessionStorage.getItem("userId");
     console.log("session userId :" + sessionStorage.getItem("userId"));
-
-    this.ngoIdBySession = sessionStorage.getItem("assignedNgoId");
-    console.log("session ngoIdBySession :" + sessionStorage.getItem("assignedNgoId"));
    }
   ngOnInit(): void {
-    
+    this.getNgoID();
   }
 
+  public getNgoID(){
+     this.ngoIdDetail=sessionStorage.getItem("assignedNgoId");
+    console.log("Ngo is is "+this.ngoId);
+  }
   // ngOnInit(): void {
   //   this.activatedroute.paramMap.subscribe(data => { 
   //     console.log("Ngo id in training is :"+ data.get('ngoId'));
