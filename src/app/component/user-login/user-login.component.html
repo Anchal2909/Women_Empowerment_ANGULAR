@@ -21,47 +21,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto">
-        <!-- <li class="nav-item">
-                <a class="nav-link" href="Register.html">Sign Up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Log In</a> -->
-
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" title="About us"
-            >About</a
-          >
+          <a class="nav-link" routerLink="/signup">Sign Up</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLink]="['/ngo']"
-            title="Non-Governmental Organizations"
-            >NGO's</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/trainings']" title="Trainings"
-            >Trainings</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            [routerLink]="['/faq']"
-            title="Frequently Asked Questions"
-            >FAQ</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/contactus']" title="Contact Us"
-            >Contact Us</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/user']" title="Update user"
-            >Account</a
-          >
+          <a class="nav-link" routerLink="/mainPage">Main Page</a>
         </li>
       </ul>
     </div>
@@ -71,7 +35,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -138,17 +101,16 @@
     <br />
     <br />
     <br />
-    <br />
 
     <section class="Form my-4 mx-5">
       <div class="Container">
         <div class="row no-gutters">
           <div class="col-lg-5">
-            <img src="./assets/images/userlogin.png" class="img-fluid" alt="" />
+            <img src="./assets/images/userlogin.png" />
           </div>
           <div class="col-lg-7 px-5 pt-5">
             <b>
-              <h4 class="font-waight-bold py-3">SIGN IN</h4>
+              <h4 class="font-waight-bold py-3">Memeber Login</h4>
             </b>
 
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
@@ -162,6 +124,7 @@
                       placeholder="Enter email id or username"
                       id="email"
                       class="form-control my-2 p-3"
+                      style="border-radius: 30px; height:40px;"
                     />
                     <div
                       *ngIf="submitted && loginForm.controls.email.errors"
@@ -187,6 +150,7 @@
                       placeholder="********"
                       id="pwd"
                       class="form-control my-2 p-3"
+                      style="border-radius: 30px; height:40px;"
                     />
                     <div
                       *ngIf="submitted && loginForm.controls.password.errors"
@@ -205,7 +169,7 @@
 
               <div class="form-row">
                 <div class="col-lg-7">
-                  <button class="btn1 mt-3 mb-4">Login</button> &nbsp; &nbsp;
+                  <button class="btn1 mt-3 mb-4" style="border-radius: 50px;">Login</button> &nbsp; &nbsp;
 
                   <br /><br />
                   <div *ngIf="invalidLogin" class="error">
