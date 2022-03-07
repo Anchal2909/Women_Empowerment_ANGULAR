@@ -1,5 +1,4 @@
-
-<style type="text/css">
+<!-- <style type="text/css">
     #about-container{
         width: 100%;background: url('assets/images/background-legislation.jpg')no-repeat center center fixed; 
         -webkit-background-size: cover;
@@ -16,26 +15,80 @@
     .content p{
         line-height: 1.5em;
     }
+</style> -->
+<style>
+    .card{
+    background: url('assets/images/background.jpg'); 
+        
+}
 </style>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container px-5">
+        <a class="navbar-brand" href="#">
+            <img
+              class="logo"
+              src="assets/images/mwcd.jfif"
+              width="100"
+              height="60"
+            />&nbsp;&nbsp; Women Empowerment</a
+          >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+         
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/home']" title="Home">Home</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/ngo']" title="Non-Governmental Organizations">NGO's</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/trainings']" title="Trainings">Trainings</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/faq']" title="Frequently Asked Questions">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contactus']" title="Contact Us">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/user']" title="Update user">Account</a>
+      </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="masthead text-white">
+  <div class="masthead-content">
 <div class="container-fluid p-3" id="about-container">
-    <h1 class="h1-responsive text-center p-3 text-dark">About us</h1><hr>
+    <h1 class="h1-responsive text-center p-3 ">About us</h1><hr>
     <div class="row" id="about">
         <div class="col-ls-4 col-md-4 col-sm-12 col-xs-12">
             <div class="view">
-                <img src="assets/images/emp-emp1.jpg" class="zoom" style="width: 100%">
+                <img src="assets/images/women4.jpg" class="zoom" style="width: 100%">
             </div>
         </div>
-        <div class="col-ls-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="col-ls-8 col-md-8 col-sm-12 col-xs-12" style="color: white;" >
             <div class="content">
                 <h3 class="text-center p-2 h3-responsive"><strong>What do we do?</strong></h3>
                 <p class="lead text-justify">
-                    The Ministry of Women and Child Development is responsible for overall development of women and children in the country. Detailed information about the child development, women development schemes and programmes, Integrated Child Protection scheme and details of anti-trafficking activities are given. Information about the Food and Nutrition Board and budgeting for gender equity is provided. One can also find legislations for protection of women and children rights.
+                    The Ministry of Women Development is responsible for overall development of women in the country. Detailed information about the women development schemes and programmes, Integrated Child Protection scheme and details of anti-trafficking activities are given. Information about the Food and Nutrition Board and budgeting for gender equity is provided. One can also find legislations for protection of women and children rights.
                 </p>
             </div>
         </div>
     </div>
     <br>
-    <div class="row">
+    <div class="row" style="color: black;" >
         <div class="col-ls-4 col-md-4 col-sm-6 col-xs-12">
             <div class="card">
                 <div class="card-header">
@@ -45,7 +98,7 @@
                     <h4 class="h4-responsive p-2"><li>Vision</li></h4>
                     <p>
                         Empowered women living with dignity and contributing as equal partners in development in an environment free from violence and discrimination. 
-                        And, wellnurtured children with full opportunities for growth and development in a safe and protective environment.
+                        And, wellnurtured children with full opportunities for development in a safe and protective environment.
                     </p>
                     <h4 class="h4-responsive p-2"><li>Mission</li></h4>
                     <p>
@@ -73,10 +126,16 @@
                 </div>
                 <div class="card-body">
                     <p>
-                        For the holistic development of the child, the Ministry has been implementing the world's largest and most unique and outreach programme of Integrated Child Development Services (ICDS) providing a package of services comprising supplementary nutrition, immunization, health check up and referral services, pre-school non-formal education. Most of the programmes of the Ministry are run through non-governmental organisations. Efforts are made to have more effective involvement of NGOs. The major policy initiatives undertaken by the Ministry in the recent past include universalisation of ICDS and Kishori Shakti Yojana, launching a nutrition programme for adolescent girls, establishment of the Commission for protection of Child Rights and enactment of Protection of Women from Domestic Violence Act.
+                        For the holistic development of the child, the Ministry has been implementing the world's largest and most unique and outreach programme of Integrated Child Development Services (ICDS) providing a package of services comprising supplementary nutrition, immunization, health check up and referral services, pre-school non-formal education. Most of the programmes of the Ministry are run through non-governmental organisations(NGO's). Efforts are made to have more effective involvement ofnon-governmental organisations (NGOs). The major policy initiatives undertaken by the Ministry in the recent past include universalisation of ICDS and Kishori Shakti Yojana, launching a nutrition programme for adolescent girls, establishment of the Commission for protection of Child Rights and enactment of Protection of Women from Domestic Violence Act.
                     </p>
                 </div>
             </div>
         </div>
     </div>    
 </div>
+</div>
+<div class="bg-circle-1 bg-circle"></div>
+<div class="bg-circle-2 bg-circle"></div>
+<div class="bg-circle-3 bg-circle"></div>
+<div class="bg-circle-4 bg-circle"></div>
+</header>
