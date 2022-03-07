@@ -14,6 +14,7 @@ import { UserSignupComponent } from './component/user-signup/user-signup.compone
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PaymentComponent } from './component/payment/payment.component';
 import { ProfileComponent } from './component/profile/profile.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path:'', component:MainPageComponent},
@@ -37,7 +38,8 @@ const routes: Routes = [
   {path:'trainings',component:TrainingComponent},    
   // {path:'register/:ngoId',component:TrainingsRegisterComponent}        //try
   {path:'register',component:TrainingsRegisterComponent},   
-  {path:'payment',component:PaymentComponent}    
+  {path:'payment',component:PaymentComponent},
+  {path:'dashboard',component:DashboardComponent}   
   
 ];
 
