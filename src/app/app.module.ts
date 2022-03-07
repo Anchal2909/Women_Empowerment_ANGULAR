@@ -16,10 +16,9 @@ import { UserSignupComponent } from './component/user-signup/user-signup.compone
 import { NgoComponent } from './component/ngo/ngo.component';
 import { NgoDetailsComponent } from './component/ngo-details/ngo-details.component';
 import { TrainingsRegisterComponent } from './component/trainings-register/trainings-register.component';
-import { NgSelectModule } from '@ng-select/ng-select';
-import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { PaymentComponent } from './component/payment/payment.component';   
 import { ProfileComponent } from './component/profile/profile.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +43,8 @@ import { ProfileComponent } from './component/profile/profile.component';
     NgoDetailsComponent,
     TrainingsRegisterComponent,
     PaymentComponent,
-    ProfileComponent
+    ProfileComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
