@@ -110,7 +110,6 @@
   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
    
   </head>
   <body> -->
@@ -122,239 +121,200 @@
             <div
               class="row d-flex justify-content-center align-items-center h-100"
             >
-              <div class="col-lg-12 col-xl-11">
-                <div class="card text-black" style="border-radius: 25px">
-                  <div class="card-body p-md-5">
-                    <b>
-                      <p
-                        class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-8"
-                      ></p>
-                    </b>
-
-                    <div class="row justify-content-center">
-                      <div
-                        class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1"
+              <hr class="mt-0 mb-4" />
+              <div class="row">
+                <div class="col-xl-4">
+                  <!-- Profile picture card-->
+                  <div class="card mb-4 mb-xl-0">
+                    <div class="card-header">Profile Picture</div>
+                    <div class="card-body text-center">
+                      <!-- Profile picture image-->
+                      <img
+                        class="img-account-profile rounded-circle mb-2"
+                        src="http://bootdey.com/img/Content/avatar/avatar1.png"
+                        alt=""
+                      />
+                      <!-- Profile picture help block-->
+                      <div class="small font-italic text-muted mb-4">
+                        JPG or PNG no larger than 5 MB
+                      </div>
+                      <!-- Profile picture upload button-->
+                      <button class="btn btn-primary" type="button">
+                        Upload new image
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-8">
+                  <!-- Account details card-->
+                  <div class="card mb-4">
+                    <div class="card-header">Account Details</div>
+                    <div class="card-body">
+                      <form
+                        class="mx-1 mx-md-4"
+                        [formGroup]="updateForm"
+                        (ngSubmit)="onSubmit()"
                       >
-                        <p
-                          class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4"
-                        >
-                          Profile
-                        </p>
-
-                        <form
-                          class="mx-1 mx-md-4"
-                          [formGroup]="updateForm"
-                          (ngSubmit)="onSubmit()"
-                        >
-                          <div class="form-group">
-                            <div
-                              class="d-flex flex-row align-items-center mb-4"
+                        <!-- Form Group (username)-->
+                        <div class="form-group">
+                          <div class="mb-3">
+                            <label class="small mb-1" for="inputfullName"
+                              >fullName</label
                             >
-                              <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                              <div class="form-outline flex-fill mb-0">
-                                  <input
-                                  formControlName="fullName"
-                                  name="fullName"
-                                  class="form-control"
-                                  placeholder="Enter your Full name"
-                                  type="text"
-                                  id="fullName"
-                                />    
-                                <div
-                                  *ngIf="
-                                    submitted &&
-                                    updateForm.controls.fullName.errors
-                                  "
-                                  class="error"
-                                >
-                                            
-                                  <div
-                                    class="text-danger"
-                                    *ngIf="
-                                      updateForm.controls.fullName.errors
-                                        .required
-                                    "
-                                  >
-                                    FirstName is required
-                                  </div>
-                                          
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              id="inputfullName"
+                              type="text"
+                              placeholder="Enter your fullName"
+                              formControlName="fullName"
+                            />
                             <div
-                              class="d-flex flex-row align-items-center mb-4"
+                              *ngIf="
+                                submitted && updateForm.controls.fullName.errors
+                              "
+                              class="error"
                             >
-                              <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                              <div class="form-outline flex-fill mb-0">
-                                <input
-                                  type="email"
-                                  formControlName="email"
-                                  placeholder="Enter Email address"
-                                  name="email"
-                                  class="form-control"
-                                  id="email"
-                                />
-                                      
-                                <div
-                                  *ngIf="
-                                    submitted &&
-                                    updateForm.controls.email.errors
-                                  "
-                                  class="error"
-                                >
-                                            
-                                  <div
-                                    class="text-danger"
-                                    *ngIf="
-                                      updateForm.controls.email.errors.required
-                                    "
-                                  >
-                                    Email is required
-                                  </div>
-                                          
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="form-group">
-                            <div
-                              class="d-flex flex-row align-items-center mb-4"
-                            >
-                              <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                              <div class="form-outline flex-fill mb-0">
-                                <input
-                                  formControlName="phoneNo"
-                                  type="tel"
-                                  placeholder="Enter your phone Number"
-                                  name="phoneNo"
-                                  class="form-control"
-                                  id="phoneNo"
-                                />
-                                      
-                                <div
-                                  *ngIf="
-                                    submitted &&
-                                    updateForm.controls.phoneNo.errors
-                                  "
-                                  class="error"
-                                >
-                                            
-                                  <div
-                                    class="text-danger"
-                                    *ngIf="
-                                      updateForm.controls.phoneNo.errors
-                                        .required
-                                    "
-                                  >
-                                    Phone Number is required
-                                  </div>
-                                          
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div
-                              class="d-flex flex-row align-items-center mb-4"
-                            >
-                              <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                              <div class="form-outline flex-fill mb-0">
-                                <input
-                                  formControlName="aadharNo"
-                                  type="tel"
-                                  placeholder="Enter your Aadhar Number"
-                                  name="aadharNo"
-                                  class="form-control"
-                                  id="aadharNo"
-                                />
-                                      
-                                <div
-                                  *ngIf="
-                                    submitted &&
-                                    updateForm.controls.aadharNo.errors
-                                  "
-                                  class="error"
-                                >
-                                            
-                                  <div
-                                    class="text-danger"
-                                    *ngIf="
-                                      updateForm.controls.aadharNo.errors
-                                        .required
-                                    "
-                                  >
-                                    Aadhar Number is required
-                                  </div>
-                                          
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div
-                              class="d-flex flex-row align-items-center mb-4"
-                            >
-                              <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                              <div class="form-outline flex-fill mb-0">
-                                <input
-                                  type="text"
-                                  formControlName="address"
-                                  placeholder="Enter  address"
-                                  name="address"
-                                  class="form-control"
-                                  id="address"
-                                />
-                                      
-                                <div
-                                  *ngIf="
-                                    submitted &&
-                                    updateForm.controls.address.errors
-                                  "
-                                  class="error"
-                                >
-                                            
-                                  <div
-                                    class="text-danger"
-                                    *ngIf="
-                                      updateForm.controls.address.errors
-                                        .required
-                                    "
-                                  >
-                                    Address is required
-                                  </div>
-                                          
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div></div>
-
-                          <div class="form-row">
-                            <div class="col-lg-7">
-                              <button
-                                class="btn btn-primary btn-lg"
-                                [disabled]="!updateForm.dirty"
+                              <div
+                                class="text-danger"
+                                *ngIf="
+                                  updateForm.controls.fullName.errors.required
+                                "
                               >
-                                Update
-                              </button>
-                              &nbsp; &nbsp;
+                                FirstName is required
+                              </div>
                             </div>
                           </div>
-                        </form>
-                      </div>
-                      <div
-                        class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2"
-                      >
-                        <img
-                          src="./assets/images/image7.jpg"
-                          class="img-fluid"
-                          alt="Sample image"
-                        />
-                      </div>
+                        </div>
+                        <!-- Form Group (location)-->
+                        <div class="col-md-6">
+                          <label class="small mb-1" for="inputaadharNo">
+                            AadharNo</label
+                          >
+                          <input
+                            class="form-control"
+                            id="inputaadharNo"
+                            type="text"
+                            placeholder="Enter your  aadharNo"
+                            formControlName="aadharNo"
+                          />
+                          <div
+                            *ngIf="
+                              submitted && updateForm.controls.aadharNo.errors
+                            "
+                            class="error"
+                          >
+                            <div
+                              class="text-danger"
+                              *ngIf="
+                                updateForm.controls.aadharNo.errors.required
+                              "
+                            >
+                              Aadhar Number is required
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Form Row        -->
+                        <div class="row gx-3 mb-3">
+                          <!-- Form Group (organization name)-->
+
+                          <!-- Form Group (location)-->
+                          <div class="col-md-6">
+                            <label class="small mb-1" for="inputaddress"
+                              >Address</label
+                            >
+                            <input
+                              class="form-control"
+                              id="inputaddress"
+                              type="text"
+                              placeholder="Enter your  address"
+                              formControlName="address"
+                            />
+                            <div
+                              *ngIf="
+                                submitted && updateForm.controls.address.errors
+                              "
+                              class="error"
+                            >
+                              <div
+                                class="text-danger"
+                                *ngIf="
+                                  updateForm.controls.address.errors.required
+                                "
+                              >
+                                Address is required
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row gx-3 mb-3">
+                          <!-- Form Group (phone number)-->
+                          <div class="col-md-6">
+                            <label class="small mb-1" for="input phoneNo"
+                              >Phone number</label
+                            >
+                            <input
+                              class="form-control"
+                              id="input phoneNo"
+                              type="tel"
+                              placeholder="Enter your phone number"
+                              formControlName="phoneNo"
+                            />
+                            <div
+                              *ngIf="
+                                submitted && updateForm.controls.phoneNo.errors
+                              "
+                              class="error"
+                            >
+                              <div
+                                class="text-danger"
+                                *ngIf="
+                                  updateForm.controls.phoneNo.errors.required
+                                "
+                              >
+                                Phone Number is required
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Form Group (email address)-->
+                          <div class="mb-3">
+                            <label class="small mb-1" for="inputemail">
+                              email</label
+                            >
+                            <input
+                              class="form-control"
+                              id="inputemail"
+                              type="email"
+                              placeholder="Enter your  email"
+                              formControlName="email"
+                            />
+                            <div
+                              *ngIf="
+                                submitted && updateForm.controls.email.errors
+                              "
+                              class="error"
+                            >
+                              <div
+                                class="text-danger"
+                                *ngIf="
+                                  updateForm.controls.email.errors.required
+                                "
+                              >
+                                Email is required
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Form Row-->
+                        </div>
+                        <!-- Save changes button-->
+
+                        <button
+                          class="btn btn-primary"
+                          [disabled]="!updateForm.valid"
+                        >
+                          Update changes
+                        </button>
+                      </form>
                     </div>
                   </div>
                 </div>
