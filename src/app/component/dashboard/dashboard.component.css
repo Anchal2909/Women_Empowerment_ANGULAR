@@ -1,0 +1,121 @@
+:root
+{
+    /* --main-bg-color:#009d63;
+    --main-text-color:#009d63;
+     --second-text-color:#bbbec5;
+    --second-bg-color:#clefde; */
+
+    --main-bg-color:#dd2f6e;
+    --main-text-color:#dd2f6e;
+     --second-text-color:#8390a2;
+    --second-bg-color:#009d63;
+}
+
+
+.primary-text{
+    /* color: var(--main-text-color); */
+    color:deeppink
+    
+}
+
+.second-text{
+    /* color: var(--second-text-color); */
+    color:white
+
+}
+
+/* .primary-bg{
+    background-color: var(--main-bg-color);
+} */
+/* .secondary-bg{
+    background-color: var(--second-bg-color);
+} */
+
+.rounded-full{
+    border-radius: 100%;
+}
+
+#wrapper{
+    overflow-x: hidden;
+    /* background-image: linear-gradient(
+        to right,
+        #baf3d7,
+        #f5e3c2,
+        #cbf7e4,
+        #d4f8ea,
+        #ddfaef
+    ); */
+
+    background-image: linear-gradient(
+        to right,
+        rgb(255, 145, 0),
+        #ffa500,
+        hsl(338, 95%, 44%),
+        deeppink,
+        rgb(255, 192, 192)
+        
+    );
+  
+}
+
+#sidebar-wrapper{
+    min-height: 100vh;
+    margin-left:-15rem;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading{
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group
+{
+    width: 100vw;
+}
+
+/* this hided john doe  */
+#page-content-wrapper
+{
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper
+{
+    margin-left: 0;
+}
+
+#menu-toggle
+{
+    cursor: pointer;
+}
+
+.list-group-item
+{
+    border: none;
+    padding: 20px 30px;
+}
+
+.list-group-item.active
+{
+    background-color: transparent;
+    /* color: var(--main-text-color); */
+    font-weight: bold;
+    border: none;
+}
+
+@media(min-width:768px)
+{
+    #sidebar-wrapper
+    {
+        margin-left: 0;
+    }
+    #page-content-wrapper{
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper
+    {
+        margin-left: -14rem;
+    }
+}
