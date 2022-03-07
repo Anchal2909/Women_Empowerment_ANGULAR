@@ -19,6 +19,7 @@ import { TrainingsRegisterComponent } from './component/trainings-register/train
 import { PaymentComponent } from './component/payment/payment.component';   
 import { ProfileComponent } from './component/profile/profile.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { AdminLoginComponent } from './component/admin-login/admin-login.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
     TrainingsRegisterComponent,
     PaymentComponent,
     ProfileComponent,
-    DashboardComponent
+    DashboardComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../Model/User';
 
-
 @Injectable({
   providedIn: 'root',
 })
@@ -30,5 +29,10 @@ export class LoginService {
   }
   getUserById(id: string) {
     return this.httpService.get<User>(this.baseUrl + '/getprofile/' + id);
+  }
+  checkAdmin(email: string, password: string) {
+    return this.httpService.get<boolean>(
+      this.baseUrl + '/verifyadmin/' + email + '/' + password
+    );
   }
 }
