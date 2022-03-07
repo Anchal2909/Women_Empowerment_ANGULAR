@@ -148,10 +148,10 @@
                             <tr>
                                 <th scope="col" width="50">ID</th>
                                 <th scope="col">User Name</th>
-                                <!-- <th scope="col">NGO</th>
+                                <th scope="col">NGO</th>
                                 <th scope="col">Trainings</th>
-                                <th scope="col">Course Fee</th> -->
-                                <th scope="col">Action</th>
+                                <th scope="col">Course Fee</th>
+                                <!-- <th scope="col">Action</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -159,11 +159,12 @@
                                 <td>{{users.regMstId}}</td><br>
                                 <!-- <td><a [routerLink]="['/ngoDetails',ngo.ngoId]" routerLinkActive="true">{{ngo.ngoName}}</a></td>		 -->
                                 <td>{{users.userName}}</td>
-                                <!-- <td>{{users.ngoName}}</td>																  
+                                <td>{{users.ngoName}}</td>																  
                                 <td>{{users.courseName}}</td>
-                                <td>{{users.amount}}</td> -->
-                                <td><button class="btn btn-success" (click)="assignNGO(ngo)">DELETE</button>	
-                           </tr> 
+                                <td>{{users.amount}}</td>
+                                <!-- <td><button class="btn btn-success" (click)="assignNGO(ngo)">DELETE</button>	-->
+                           
+                                </tr> 
                         </tbody>
                     </table> 
                 </div>
