@@ -1,12 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" 
-    />
+    <link rel="icon" type="image/x-icon" />
     <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
@@ -34,8 +32,8 @@
             width="100"
             height="60"
           />&nbsp;&nbsp;
-          <h3 style="color: white;"> Women Empowerment</h3>
-         
+          <h3 style="color: white">Women Empowerment</h3>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -54,25 +52,49 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="login.html">Log In</a> -->
-              
+
               <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/about']" title="About us">About</a>
+                <a class="nav-link" [routerLink]="['/about']" title="About us"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                  <a class="nav-link" [routerLink]="['/ngo']" title="Non-Governmental Organizations">NGO's</a>
+                <a
+                  class="nav-link"
+                  [routerLink]="['/ngo']"
+                  title="Non-Governmental Organizations"
+                  >NGO's</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/trainings']" title="Trainings">Trainings</a>
+                <a
+                  class="nav-link"
+                  [routerLink]="['/trainings']"
+                  title="Trainings"
+                  >Trainings</a
+                >
               </li>
               <li class="nav-item">
-                  <a class="nav-link" [routerLink]="['/faq']" title="Frequently Asked Questions">FAQ</a>
+                <a
+                  class="nav-link"
+                  [routerLink]="['/faq']"
+                  title="Frequently Asked Questions"
+                  >FAQ</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/contactus']" title="Contact Us">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/user']" title="Update user">Account</a>
-          </li>
+                <a
+                  class="nav-link"
+                  [routerLink]="['/contactus']"
+                  title="Contact Us"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/user']" title="Update user"
+                  >Account</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -80,75 +102,147 @@
       <!-- Header-->
       <header class="masthead text-center text-white">
         <div class="masthead-content">
-		
-		
-		
-
-
-
-<div class="header">
-  <img src="/assets/images/smile.png" />
-  <td>
-    <!-- <button class="btn btn-success" (click)="viewCourses()">
+          <div class="header">
+            <img src="/assets/images/smile.png" />
+            <td>
+              <!-- <button class="btn btn-success" (click)="viewCourses()">
       View Trainings
     </button> -->
-  </td>
-  <h1>Smile Foundations</h1>
-  <p>
-    Smile Foundation, an Indian social development organization, is directly
-    benefitting over 15 lakh children and their families every year. We have
-    more than 400 live welfare projects on education, healthcare, livelihood,
-    and women’s empowerment in over 2,000 remote villages and urban slums across
-    25 states of India. The groundwork for a better life lies in education. It
-    is the most powerful catalyst for social transformation. However, a child
-    cannot be educated in isolation. Only an empowered family, especially the
-    mother, would be willing to educate their child. Thus, rather than focusing
-    on only one stage of a person's life, we believe in the lifecycle approach.
-    Education empowers an individual to earn their livelihood and also increases
-    one's awareness on a range of issues. From healthcare, to appropriate social
-    behavior, to understanding one's rights – Smile Foundation seeks to educate,
-    empower and cultivate better citizens.
-  </p>
-  <div class="text-center">
-    <button class="btn btn-success mr-1" (click)="viewCourses()">View Trainings</button>
-  </div>
-</div>
+            </td>
+            <div *ngIf="ngoId == '1002'">
+              <h1 style="margin-top: 20px">Smile Foundation</h1>
+              <p style="align-content: center">
+                Smile Foundation, an Indian social development organization, is
+                directly benefitting over 15 lakh children and their families
+                every year. We have more than 400 live welfare projects on
+                education, healthcare, livelihood, and women’s empowerment in
+                over 2,000 remote villages and urban slums across 25 states of
+                India. The groundwork for a better life lies in education. It is
+                the most powerful catalyst for social transformation. However, a
+                child cannot be educated in isolation. Only an empowered family,
+                especially the mother, would be willing to educate their child.
+                Thus, rather than focusing on only one stage of a person's life,
+                we believe in the lifecycle approach. Education empowers an
+                individual to earn their livelihood and also increases one's
+                awareness on a range of issues. From healthcare, to appropriate
+                social behavior, to understanding one's rights – Smile
+                Foundation seeks to educate, empower and cultivate better
+                citizens.
+              </p>
+            </div>
+            <div *ngIf="ngoId == '1003'">
+              <h1 style="margin-top: 20px">Help Age India</h1>
+              <p style="align-content: center">
+                HelpAge India is a secular, not-for-profit organization in
+                India, registered under the Societies’ Registration Act of 1860.
+                Set up in 1978, the organization works for ‘the cause and care
+                of disadvantaged older persons to improve their quality of life’
+                HelpAge envisions a society where elderly have the right to an
+                active, healthy and dignified life. It recently became the first
+                and only Indian organization to be honoured with the ‘UN
+                Population Award 2020’ for its exemplary work in the field of
+                ageing, relief efforts work during the Covid 19 pandemic and
+                recognition of the organization’s outstanding contribution to
+                population issues and efforts in the realization of older
+                persons rights in India. Currently there are a projected 138
+                million elderly in India. HelpAge India voices their concerns,
+                so they can lead secure & dignified lives. It works through 26
+                State Offices across India, runs numerous programs on-ground,
+                addressing elder needs and advocating for their rights, such as
+                their right to Universal Pension, quality Healthcare, action
+                against Elder Abuse and many more at a national, state and
+                societal level with Central and State governments. It advocates
+                for elder friendly policies and their implementation thereof.
+                The organization’s programs are focused on direct interventions
+                in the areas of Healthcare (mobile healthcare units, cataract
+                surgeries), Agecare (helplines, senior citizen care homes and
+                day care centres, physiotherapy), Livelihoods (elder-self-help
+                groups; linkages with government schemes), Disaster Response
+                (e.g. covid19 relief response), as well as Advocacy and
+                Awareness on rights and policies relating to elders.
+              </p>
+            </div>
+            <div *ngIf="ngoId == '1004'">
+              <h1 style="margin-top: 20px">Pratham</h1>
+              <p>
+                Pratham is an innovative learning organization created to
+                improve the quality of education in India. Established in 1995
+                to provide education to children in the slums of Mumbai, Pratham
+                has grown in both scope and scale, with programs today reaching
+                children and youth across the country. As one of the largest
+                non-governmental organizations in the country, Pratham focuses
+                on high-quality, low-cost and replicable interventions to
+                address gaps in the education system. Working directly with
+                children and youth as well as through large-scale collaborations
+                with government systems, Pratham programs reach millions of
+                lives every year. Pratham's Teaching at the Right Level (TaRL)
+                approach has demonstrated proven impact on children's learning
+                outcomes and is now being adapted to contexts outside India.
+              </p>
+            </div>
+            <div *ngIf="ngoId == '1005'">
+              <h1 style="margin-top: 20px">Deepala</h1>
+              <p>
+                Deepalaya’s focus and sole reason for existence is the child,
+                especially the girl child, street child and disabled child. The
+                family of the child is the medium through which the development
+                takes place. Organisation and sensitisation of the community is
+                the approach through which empowerment, capacity building and
+                social transformation are attempted. We at Deepalaya commit
+                ourselves –To identify and work along the economically and
+                socially deprived, the physically and mentally challenged –
+                starting with children, so that they become educated, skilled
+                and aware. Enable them to be self-reliant and enjoy a healthy,
+                dignified and sustainable quality of life And to that end, act
+                as a resource to and collaborate with other agencies –
+                governmental or non-governmental, as well as suitably intervene
+                in policy formulation.
+              </p>
+            </div>
+            <div *ngIf="ngoId == '1006'">
+              <h1 style="margin-top: 20px">GiveIndia</h1>
+              <p>
+                GiveIndia exists to alleviate poverty by enabling the world to
+                give. Established in 2000, it is the largest and the most
+                trusted giving platform in India. It enables individuals and
+                organizations to raise and donate funds conveniently to any
+                cause they care about, with offerings including crowdfunding,
+                corporate giving, cause marketing, and philanthropy consulting.
+                GiveIndia’s community of 2M+ donors and 250+ partners have
+                supported 2,500+ verified nonprofits, serving 15M+ people across
+                the country. GiveIndia was born to bridge the gap between the
+                people who want to make a difference through giving back and
+                those who are doing phenomenal work but need more support. Our
+                focus has been to build trust for the social sector by strong
+                due diligence of all our nonprofit partners, and transparency on
+                how donations impacted lives on the ground.
+              </p>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-success mr-1" (click)="viewCourses()">
+                View Trainings
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+      </header>
 
-
-
-
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-</div>
-<div class="bg-circle-1 bg-circle"></div>
-<div class="bg-circle-2 bg-circle"></div>
-<div class="bg-circle-3 bg-circle"></div>
-<div class="bg-circle-4 bg-circle"></div>
-</header>
-
-
-<!-- Footer-->
-<footer
-id="sticky-footer"
-class="flex-shrink-0 py-4 bg-dark text-white-50"
->
-<div class="container text-center">
-  <small> Ministry of Women and Child Development developed and maintained by &nbsp; &nbsp; &nbsp; &nbsp;Larsen & Toubro Infotech</small>
-</div>
-</footer>
-</body>
-</body>
+      <!-- Footer-->
+      <footer
+        id="sticky-footer"
+        class="flex-shrink-0 py-4 bg-dark text-white-50"
+      >
+        <div class="container text-center">
+          <small>
+            Ministry of Women and Child Development developed and maintained by
+            &nbsp; &nbsp; &nbsp; &nbsp;Larsen & Toubro Infotech</small
+          >
+        </div>
+      </footer>
+    </body>
+  </body>
 </html>
-

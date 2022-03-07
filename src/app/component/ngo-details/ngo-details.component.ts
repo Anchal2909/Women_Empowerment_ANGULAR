@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
  
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgoService } from 'src/app/Services/ngo.service';
+import { ngodetails } from './ngo-details';
 
 @Component({
   selector: 'app-ngo-details',
@@ -10,6 +11,7 @@ import { NgoService } from 'src/app/Services/ngo.service';
 })
 export class NgoDetailsComponent implements OnInit {
   ngoId:any;
+  ngodetail : ngodetails | undefined;
   //sub:any;
   // ngo:any;
   // p:any;
@@ -23,13 +25,12 @@ export class NgoDetailsComponent implements OnInit {
   //     this.activatedroute.paramMap.subscribe(data => { 
   //     console.log("Ngo id passed is :"+ data.get('ngoId'));
   //     this.ngoId = data.get('ngoId'); 
-      
-   this.getNgoDetails();
+    this.getNgoDetails();
   // });
   }
   public getNgoDetails(){
-    var ngoID=sessionStorage.getItem("assignedNgoId");
-    console.log("Ngo is is "+ngoID);
+     this.ngoId=sessionStorage.getItem("assignedNgoId");
+    console.log("Ngo is is "+this.ngoId);
   }
   viewCourses(): void {
 

@@ -1,4 +1,4 @@
-export class ngo
+export class ngodetails
 {
     ngoId:number=0;
     ngoName:string="";
