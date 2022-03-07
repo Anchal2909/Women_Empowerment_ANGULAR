@@ -94,20 +94,13 @@ know{
 table {
   margin-top: 20px;
   background-color: white;
-  border: 1px;
-  
+  border-radius: 40px;
+  table-layout: auto;
 }
-
-tr {
-  color: teal;
-}
-
 th {
-  background-color: black;
-  color: white;
+  
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 td {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

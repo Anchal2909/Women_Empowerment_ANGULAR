@@ -30,11 +30,10 @@ export class NgoComponent implements OnInit {
               ) 
    }
 
-   assignNGO(ngo: ngo): void {
-    ngo.ngoId = 1002;
+   assignNGO(ngoId:number ): void {
     // sessionStorage.setItem('assignedNgoId', JSON.stringify(this.ngo.ngoId));
-    sessionStorage.setItem("assignedNgoId", ngo.ngoId.toString());
-    console.log("Ngo id passed from session storage is:"+ngo.ngoId);
+    sessionStorage.setItem("assignedNgoId", ngoId.toString());
+    console.log("Ngo id passed from session storage is:"+ngoId);
     this.router.navigateByUrl('/ngoDetails');
     };
 

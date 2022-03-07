@@ -98,10 +98,10 @@
         <div class="masthead-content">
           <section style="margin-top: 10px;">
             <h3 style="margin-right: auto;margin-right: auto;">List of NGO's</h3>
-            <table class="table" width="70%">
+            <table class="table">
               <thead class="thead-dark">
                 <tr>
-                  <th scope="col">NGO Id</th>
+                  <th scope="col" >NGO Id</th>
                   <th scope="col">NGO Name</th>
                   <th scope="col">Address</th>
                   <th scope="col">Contact No</th>
@@ -109,21 +109,15 @@
                   <th scope="col">Enroll</th>
                 </tr>
               </thead>
-              <tbody>
                 <tr *ngFor="let ngo of ngoList">
-               
-                  <td>{{ngo.ngoId}}</td><br>
-                  <!-- <td><a [routerLink]="['/ngoDetails',ngo.ngoId]" routerLinkActive="true">{{ngo.ngoName}}</a></td>		 -->
+                  <td>{{ngo.ngoId}}</td>
                   <td>{{ngo.ngoName}}</td>																 
-                  <td>{{ngo.ngoAdd}}</td>	<br>
-                  <td>{{ngo.ngoContact}}</td><br>
-                  <td>{{ngo.ngoEmail}}</td>
-                  <td><button class="btn btn-warning" (click)="assignNGO(ngo)">View NGO</button>	
-
-
+                  <td>{{ngo.address}}</td>
+                  <td>{{ngo.contactNo}}</td>
+                  <td>{{ngo.emailId}}</td>
+                  <td><button class="btn btn-warning" (click)="assignNGO(ngo.ngoId)" style="background-color:rgb(255, 208, 1);">View NGO</button>	
                   </td>
                 </tr>
-              </tbody>
             </table>
           </section>
         </div>
