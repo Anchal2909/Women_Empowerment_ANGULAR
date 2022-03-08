@@ -11421,6 +11421,11 @@ header.masthead .bg-circle-4 {
   color: var(--bs-pink);
 }
 
+.fa-google {
+  background: yellow;
+  color: var(--bs-pink);
+}
+
 
 
 
@@ -11454,7 +11459,7 @@ header.masthead .bg-circle-4 {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: cursive;
   max-width: 100%;
   padding: 8px 15px;
   /* background: #FFFFF3; */
@@ -11464,15 +11469,23 @@ header.masthead .bg-circle-4 {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 15rem;
 }
 .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
+  height: 15rem;
 }
 
 
 
+/* footer -anchal */
+.footer-link{
+  color: rgb(216, 212, 212);
+  cursor: pointer; 
+  }
+  .footer-link:hover {
+  color: #000;
+  }
