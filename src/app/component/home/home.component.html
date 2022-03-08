@@ -1,54 +1,9 @@
-<!-- <div id="container">
-    <div class="m-2">
-        <nav class="navbar navbar-expand-md ">
-            <div class="container-fluid">
-                <a  class="navbar-brand">
-                    <img src="images/mwcd.jfif" height="58" >
-                    Women Empowerment
-                </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link active">Home</a>
-                        <a href="#" class="nav-item nav-link">Profile</a>
-                        <a href="#" class="nav-item nav-link">About</a>
-                        <a href="#" class="nav-item nav-link">FAQ</a>
-                        <a href="login.html" class="nav-item nav-link">Login</a>
-                    </div>
-                  
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="description">
-        <h1>Ministry of Women Empowerment!</h1>
-        <p>
-            “Women Empowerment Reminder of The Day. Always respect yourself as a woman.
-             You attract what you are, so be very mindful of how you’re representing yourself. 
-             If you want respect, you must first learn how to respect yourself, first. 
-             Attracting negative attention is never a good thing. Be a woman of substance! 
-             Be a woman that both women and men respect, admire, and look up to. 
-             Don’t disrespect yourself by lowering your standards and accepting just anything that comes your way.
-              It’s okay to be single! If you want a relationship of substance, 
-            you can’t keep entertaining people and things that mean you no good. 
-            Think about it! It’s all up to you.”
-        </p>
-    </div>
-    <div>
-   
-    <div class="footer-copyright text-center py-3" id="footer-bottom">© 2020 Copyright:
-        <a href="#" class="footer-link"> WomenEmpowerment.com</a>
-      </div>
-      </div>
-     -->
+
      <style>
       #main-container {
         width: 100%;
         height: 100vh;
-        background: url("assets/images/Women-Skill-India-schemes.jpeg") no-repeat
-          center center fixed;
+        background: url("assets/images/women29.jpg");
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -56,50 +11,19 @@
         color: #ffffff;
       }
     </style>
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar ">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="assets/images/mwcd.jfif" height="58">
-                <strong>  Women Empowerment</strong></a>
-             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button> 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/about']" title="About us">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" [routerLink]="['/ngo']" title="Non-Governmental Organizations">NGO's</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/trainings']" title="Trainings">Trainings</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" [routerLink]="['/faq']" title="Frequently Asked Questions">FAQ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/contactus']" title="Contact Us">Contact Us</a>
-                </li>
-                </ul>
-                <form class="form-inline">
-                  <div class="md-form my-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                  </div>
-                </form>
-              </div>
-            </div>
-          </nav> -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+   
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="height: 12%;"> 
       <div class="container px-5">
+        
         <a class="navbar-brand" href="#">
           <img
             class="logo"
-            src="assets/images/mwcd.jfif"
+            src="assets/images/logomain.png"
             width="100"
             height="60"
-          />&nbsp;&nbsp; Women Empowerment</a
+          /></a
         >
+
         <button
           class="navbar-toggler"
           type="button"
@@ -113,11 +37,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+          
+             <li class="nav-item">
               <a class="nav-link" [routerLink]="['/about']" title="About us"
-                >About</a
+                >About Us</a
               >
-            </li>
+            </li> 
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -131,41 +56,261 @@
                 >Trainings</a
               >
             </li>
+           
             <li class="nav-item">
-              <a
-                class="nav-link"
-                [routerLink]="['/faq']"
-                title="Frequently Asked Questions"
-                >FAQ</a
+              <a class="nav-link" [routerLink]="['/main-page']" title="Welcome"
+                > Welcome</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/contactus']" title="Contact Us"
-                >Contact Us</a
-              >
-            </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown" >
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
+              <div class="dropdown-menu" >
+                  <a href="#" class="dropdown-item">My Profile</a>
+                  <a (click)="navigateToSection('account-about')"  class="dropdown-item">Our team</a>
+                  <a href="#" class="dropdown-item">Logout</a>
+                  
+               
+                
+              </div>
+          </li>
+            <!-- <li class="nav-item">
               <a class="nav-link" [routerLink]="['/profile']" title="Account"
                 >Account</a
               >
-            </li>
-            <li class="nav-item"><!--added by Anchal-->
-              <a class="nav-link" [routerLink]="['/dashboard']" title="Admin Dashboard">Dashboard</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
     </nav>
-    
-    <div class="view" id="main-container">
+   
+    <header class="masthead text-white">
+      <div class="masthead-content">
+<div class="view" id="main-container">
       <div class="overlay">
         <h1 class="text-center p-4">Ministry of Women Empowerment</h1>
       </div>
-    </div>
-    <div class="footer-copyright text-center py-3" id="footer-bottom">
+    </div> 
+  </div></header>
+    <section id="account-about" class="team-section text-center">
+      <h2 class="h1-responsive font-weight-bold my-5">OUR AMAZING TEAM</h2>
+    
+      <div class="card-group">
+        <div class="card">
+          <div class="avatar mx-auto">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).webp"
+              class="rounded-circle z-depth-1"
+              alt="Sample avatar"
+              style="width: 150px;"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="font-weight-bold mt-4 mb-3">Anchal Singh</h5>
+            <p class="text-uppercase blue-text">
+              <strong>Executive Director</strong>
+            </p>
+            <ul class="list-unstyled mb-0">
+              <a class="p-2 fa-lg fb-ic">
+                <a href="#" class="fa fa-facebook"></a>
+              </a>
+              <a class="p-2 fa-lg tw-ic">
+                <a href="#" class="fa fa-twitter"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-instagram"></a>
+              </a>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="avatar mx-auto">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+              class="rounded-circle z-depth-1"
+              alt="Sample avatar"
+              style="width: 150px;"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="font-weight-bold mt-4 mb-3">Shrawani</h5>
+            <p class="text-uppercase blue-text">
+              <strong>UI Designer</strong>
+            </p>
+            <ul class="list-unstyled mb-0">
+              <a class="p-2 fa-lg fb-ic">
+                <a href="#" class="fa fa-facebook"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-instagram"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-linkedin"></a>
+              </a>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="avatar mx-auto">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+              class="rounded-circle z-depth-1"
+              alt="Sample avatar"
+              style="width: 150px;"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="font-weight-bold mt-4 mb-3">SaiHoshini</h5>
+            <p class="text-uppercase blue-text">
+              <strong>Head of Marketing</strong>
+            </p>
+            <ul class="list-unstyled mb-0">
+              <a class="p-2 fa-lg fb-ic">
+                <a href="#" class="fa fa-facebook"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-twitter"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-linkedin"></a>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="avatar mx-auto">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+              class="rounded-circle z-depth-1"
+              alt="Sample avatar"
+              style="width: 150px;"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="font-weight-bold mt-4 mb-3">Mahesh</h5>
+            <p class="text-uppercase blue-text">
+              <strong>Technical Director</strong>
+            </p>
+            <ul class="list-unstyled mb-0">
+              <a class="p-2 fa-lg fb-ic">
+                <a href="#" class="fa fa-facebook"></a>
+              </a>
+              <a class="p-2 fa-lg tw-ic">
+                <a href="#" class="fa fa-twitter"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-instagram"></a>
+              </a>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="avatar mx-auto">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
+              class="rounded-circle z-depth-1"
+              alt="Sample avatar"
+              style="width: 150px;"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="font-weight-bold mt-4 mb-3">Nikhil</h5>
+            <p class="text-uppercase blue-text">
+              <strong>Assistant Director</strong>
+            </p>
+            <ul class="list-unstyled mb-0">
+              <a class="p-2 fa-lg fb-ic">
+                <a href="#" class="fa fa-facebook"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-instagram"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-linkedin"></a>
+              </a>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="avatar mx-auto">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
+              class="rounded-circle z-depth-1"
+              alt="Sample avatar"
+              style="width: 150px;"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="font-weight-bold mt-4 mb-3">Naveen</h5>
+            <p class="text-uppercase blue-text">
+              <strong>Head of Marketing</strong>
+            </p>
+            <ul class="list-unstyled mb-0">
+              <a class="p-2 fa-lg fb-ic">
+                <a href="#" class="fa fa-facebook"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-twitter"></a>
+              </a>
+              <a class="p-2 fa-lg ins-ic">
+                <a href="#" class="fa fa-linkedin"></a>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+    
+          
+    
+          <a class="p-2 fa-lg fb-ic">
+            <a href="#" class="fa fa-facebook"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-twitter"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-google"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-linkedin"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-instagram"></a>
+          </a>
+          <a class="p-2 fa-lg ins-ic">
+            <a href="#" class="fa fa-github"></a>
+          </a>
+          <br><br>
+          <p class="text-muted">
+            &copy; Module No. 411, 4th Floor, NSIC-MDBP Building Okhla Industrial
+            Estate, New Delhi – 110020 (INDIA)<br />
+            M - +919897546378
+          </p>
+    
+        </section>
+      </div>
+     
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="footer-link" href="#"> Ministry of Women Development</a
+          >&nbsp; developed and maintained by
+          <a class="footer-link" href="">&nbsp;Larsen & Toubro Infotech</a>
+      </div>
+    
+    </footer>
+
+    <!-- <div class="footer-copyright text-center py-3" id="footer-bottom">
       © 2020 Copyright :&nbsp;
       <a class="footer-link" href=""> Ministry of Women and Child Development</a
       >&nbsp; developed and maintained by
       <a class="footer-link" href="">&nbsp;Larsen & Toubro Infotech</a>
-    </div>
+    </div> -->
     
