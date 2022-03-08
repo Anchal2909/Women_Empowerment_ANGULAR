@@ -110,3 +110,55 @@ td {
   height: 40px;
   object-fit: contain;
 } */
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 6px;
+  font-size: 20px;
+  width: 38px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  background-color: #000;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/*linkedin*/
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: yellow;
+  color: var(--bs-pink);
+}
+
+.fa-github {
+  background: black;
+  color: var(--bs-pink);
+}
+
+.fa-google {
+  background: yellow;
+  color: var(--bs-pink);
+}
