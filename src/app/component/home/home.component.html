@@ -51,21 +51,16 @@
                 >NGO's</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/trainings']" title="Trainings"
-                >Trainings</a
-              >
-            </li>
            
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/main-page']" title="Welcome"
-                > Welcome</a
+              <a class="nav-link" [routerLink]="['/contactus']" title="Welcome"
+                > Contact us</a
               >
             </li>
             <li class="nav-item dropdown" >
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
               <div class="dropdown-menu" >
-                  <a href="#" class="dropdown-item">My Profile</a>
+                  <a [routerLink]="['/profile']" class="dropdown-item">My Profile</a>
                   <a (click)="navigateToSection('account-about')"  class="dropdown-item">Our team</a>
                   <a href="#" class="dropdown-item">Logout</a>
                   
