@@ -16,6 +16,7 @@ import { PaymentComponent } from './component/payment/payment.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { AdminLoginComponent } from './component/admin-login/admin-login.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'adminlogin', component: AdminLoginComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'contactus', component: ContactComponent }
 ];
 
 @NgModule({
